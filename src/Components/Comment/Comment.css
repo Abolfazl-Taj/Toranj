@@ -1,0 +1,58 @@
+.Comments{
+    @apply flex flex-col mx-auto w-[1400px] justify-center items-center my-12 font-["Lalezar"]  relative overflow-hidden
+}
+.Comments_Header{
+@apply text-[42px] relative
+}
+.Comments_Header{
+    @apply flex justify-center items-center  w-full relative
+}
+.Comments_Header hr{
+@apply w-full absolute;
+border-top: 2px dashed #4c4c4c ;
+}
+.Comments_Header span{
+    @apply bg-[#fff] z-20 text-zinc-800/60
+}
+.Comments_Cont{
+@apply flex w-full my-4 items-center justify-around
+}
+.Comment{
+    transition: all 0.5s ease-in-out;
+@apply w-[30%] bg-[#f6f6f6] p-6 flex flex-col justify-center items-center rounded shadow my-8 relative ;
+overflow: hidden !important;
+}
+.Comment img{
+    @apply my-2
+}
+.Comment_Author{
+@apply text-[20px] my-1 font-black text-[gray]/70  z-20
+}
+.Comment_Desc{
+    direction: rtl;
+@apply text-[18px] text-justify text-wrap leading-8 my-1 z-20 text-zinc-900/70
+}
+.Comment:hover{
+    transition: all 0.5s ease-in-out;
+    @apply bg-[#a90e06] text-[#fff]
+}
+.Comment:hover .Comment_Author{
+    @apply text-[#fff]
+}
+.Comment:hover .Comment_Desc {
+@apply text-[#fff]
+}
+.Comment::after , .Comment::before{
+    transition: all 0.5s ease-in-out;
+    content: ",,";
+    @apply absolute text-[200px] text-[gray]/40
+}
+.Comment::after {
+    @apply right-[1%] bottom-0
+}
+.Comment::before{
+    @apply left-[1%] rotate-180 top-0
+}
+.Comment:hover:after , .Comment:hover:before{
+    @apply text-[#540f0f]
+}

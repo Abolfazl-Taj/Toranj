@@ -1,0 +1,23 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Sug_Slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+  }
+
+     .swiper-button-prev  ,  .swiper-button-next {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px) ;
+    @apply bg-[darkred]/40 text-white w-10 h-10 rounded-full absolute
+  }
+  .Sug_Slide.swiper-button-next::after,
+  .Sug_Slide.swiper-button-prev::after {
+   @apply text-white  text-[18px] 
+  }

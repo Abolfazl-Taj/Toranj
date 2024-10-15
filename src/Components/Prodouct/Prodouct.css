@@ -1,0 +1,36 @@
+.Prodouct{
+    @apply mx-auto w-[1400px] flex flex-col font-["Lalezar"] my-12;
+    direction: rtl;
+}
+.Prodouct_Cat{
+@apply w-full text-center text-[44px] font-bold my-2 text-zinc-800/70 relative 
+}
+.Prodouct_Cat::after , .Prodouct_Cat::before{
+    content: "";
+    @apply w-[1px] h-[400px] absolute rotate-90 top-[-10.25rem];
+    border-left: dashed 10px #888;
+}
+.Prodouct_Cat::after {
+    @apply left-52;
+}
+.Prodouct_Cat::before {
+    @apply right-52;
+}
+.Prodouct_List{
+@apply  my-6 flex justify-center items-center
+}
+.Prodouct_Item{
+@apply flex flex-col justify-center items-center mx-2
+}
+.Prodouct_Item:nth-child(odd){
+    @apply flex-col-reverse
+}
+.Prodouct_Text{
+    @apply flex flex-col my-4
+}
+.Prodouct_Header{
+@apply text-[25px] font-bold text-zinc-900/60  my-2
+}
+.Prodouct_Desc{
+  @apply   text-[14px] font-bold text-zinc-500/60 my-2
+}

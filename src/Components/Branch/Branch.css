@@ -1,0 +1,35 @@
+
+  
+.Branch_SlideShow{
+    @apply my-16 overflow-visible
+}
+.Branch_SlideShow .swiper-slide{
+    transition: all 0.25s ease-in-out;
+    @apply rounded-xl px-0 py-0 my-6 flex justify-center items-center flex-col  overflow-hidden relative ;
+    background-color: #f4f4f4 !important;
+}
+.Branch_Slider img{
+    @apply w-full rounded-xl mb-4
+}
+.Branch_Text{
+    direction: rtl;
+@apply flex flex-col px-4 py-3 my-1 w-full
+}
+.Branch_Header{
+ @apply w-full text-zinc-800/90 my-2 text-center text-[30px]
+}
+.Branch_Phone{
+@apply flex w-full my-2 justify-center items-center
+}
+.Branch_Phone{
+    @apply text-[16px] font-bold text-zinc-800/60
+}
+.Branch_Loc{
+@apply w-full text-center my-3 text-[22px] text-[darkred] font-black
+}
+.Branch_Btn{
+@apply flex  justify-center items-center text-center bg-[darkred] px-3 py-2 rounded text-white my-3  absolute bottom-[-100px]
+}
+.Branch_SlideShow .Branch_Slider:hover{
+    @apply  scale-110 shadow-md shadow-[darkred] 
+}

@@ -1,0 +1,37 @@
+.Menu_Page{
+    @apply bg-[##f4f4f4] w-full h-full
+}
+.Food_Menu{
+    @apply  w-[1400px] mx-auto flex justify-center items-center flex-row-reverse;
+}
+.Food_Route{
+ @apply flex justify-center items-center w-[120px] h-[150px] py-8   mx-3;
+ transition: all 0.2s 0.1s ease-in-out
+}
+.Food_Continer{
+@apply flex flex-col justify-center items-center w-full h-[150px] shadow-lg rounded-xl
+ text-[#F48A8A] font-["Lalezar"] px-4 py-6 ;
+background-color: #f1f1f190 !important;
+transition: all 0.2s 0.1s ease-in-out
+}
+.Food_Icon{
+@apply w-10 h-10 my-6
+}
+.Food_Name{
+    @apply text-[18px] font-semibold
+}
+.Food_Menu .active{
+    @apply bg-[#A90E06] rounded-xl shadow-lg shadow-[#A90E06] translate-y-[-15px] scale-105
+}
+.Food_Menu .active::after{
+    @apply hidden
+}
+.Food_Menu .active .Food_Continer{
+    @apply  text-[#A90E06]/60 text-[#640505]  font-black ;
+    border: dashed 3px #fff;
+  background-color: transparent !important  ;
+
+}
+.Food_Menu .active .Food_Name{
+    text-shadow: 1px 0px #111;
+}

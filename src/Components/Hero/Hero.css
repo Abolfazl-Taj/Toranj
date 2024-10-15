@@ -1,0 +1,19 @@
+@keyframes movingleaf {
+    100%{
+        transform:   translateY(500px)  ;
+        transform: rotateY('360deg');
+    }
+}
+.Hero_Content{
+    direction: rtl;
+}
+.Hero_Title::after{
+    content: "";
+    @apply absolute right-[-10px] h-[6px] w-[6px] rounded-full bg-yellow-300 bottom-2
+}
+.Right_Leaf{
+    @apply rotate-[195deg]
+}
+.animatell{
+    animation:  infinite 7s ease-in-out movingleaf;
+}

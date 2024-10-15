@@ -1,0 +1,84 @@
+.Contacts{
+@apply mx-auto w-[1400px] my-12 font-["Lalezar"]
+}
+.Contacts_Cont{
+@apply flex w-full justify-around items-center my-12
+}
+.Contact{
+    direction: rtl;
+    transition: all 0.25s ease-in-out;
+@apply flex w-1/4 bg-[#f1f1f1] mx-3 p-6 rounded-2xl shadow-[#f2f2f2] shadow my-1 justify-between ;
+}
+.Contact_Info{
+@apply w-3/4 flex flex-col
+}
+.Contact_Header{
+@apply flex my-2 text-[25px] items-center text-zinc-800/60 px-2 py-4
+}
+.Contact_Header i , .Contact_Header span{
+    @apply text-[45px] text-[#a90e06] mx-1
+}
+.Contact_Header span{
+    @apply text-[30px] font-bold 
+}
+.Contact_Fallow{
+@apply text-[25px] text-zinc-800/60
+}
+.Moreinfo_Contact{
+    @apply flex justify-center items-center
+}
+.Contact_Btn{
+@apply bg-[#fff] p-4 rounded text-[#7d1e19]
+}
+.Contact:hover{
+@apply bg-[#a90e06];
+color: white !important;
+}
+.Contact:hover  .Contact_Header i , .Contact:hover .Contact_Header span {
+@apply text-white
+}
+.Contact:hover .Contact_Btn{
+    @apply bg-[#7d1e19]  text-[#fff]
+}
+
+
+.Contact_Form{
+    direction: rtl;
+    @apply my-40  flex flex-col bg-[#f1f1f1] mx-auto w-[1200px] px-4 py-6 rounded shadow
+}
+.Form_Header{
+@apply w-full my-4 text-center text-[30px] text-zinc-800/60 border-b 
+}
+.Contact_Info_Input{
+@apply w-full flex justify-center items-center  my-3 px-2 py-4 border-b      shadow-2xl shadow-[#fff]
+} 
+.Contact_Input{
+    @apply bg-transparent  text-zinc-400 font-medium pb-2 rounded py-3 px-4;
+    box-shadow: inset 1px 1px 10px 1px rgba(128, 128, 128, 0.312);
+    outline: none;
+}
+.Contact_Input_Cont{
+    @apply flex flex-col w-full my-2  border-b  shadow-2xl shadow-[#fff]
+}
+.Contact_Input_Cont label{
+    @apply text-zinc-500 my-2 font-medium
+}
+.Contact_Info_Input .Contact_Input{
+@apply w-1/2 bg-transparent
+}
+.Contact_Select{
+@apply bg-[#fff] text-[18px] w-1/2 text-zinc-400 my-2 px-2 py-1 rounded;
+box-shadow: inset 1px 1px 10px 1px gray;
+outline: none;
+}
+.Contact_Option{
+@apply bg-[#a90e06] text-white border-b-4 border-white
+}
+.ContactF_Btn{
+@apply w-full bg-white my-3 py-4 rounded text-zinc-950/70
+}
+.Contact_TextArea{
+    @apply text-[16px] h-[120px] px-4 py-6 rounded bg-transparent text-zinc-400;
+    box-shadow: inset 1px 1px 10px 1px gray;
+    outline: none;
+}

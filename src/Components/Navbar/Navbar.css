@@ -1,0 +1,80 @@
+.Navbar{
+    background-color: var(--BgColor);
+    direction: rtl;
+    font-family: Vazir;
+    font-weight: bold;
+    @apply w-[1400px] mx-auto  flex justify-between items-center p-4 my-8 rounded-xl;
+}
+.Navbar_Right , .Navbar_Left{
+    @apply w-1/2
+}
+.Navbar_Right{
+    @apply flex justify-center items-center 
+}
+.Navbar_List , .Navbar_Logo{
+    @apply w-1/2 px-4
+}
+.Navbar_Logo{
+    @apply w-[180px] 
+}
+
+.Navbar_List{
+@apply flex justify-center items-center
+}
+.Navbar_Item{
+    font-family: Lalezar;
+    @apply flex flex-col w-[90px] justify-center items-center text-[16px] 
+}
+.Navbar_Item span{
+    @apply my-0
+}
+.Navbar_Item i{
+    @apply text-[20px] my-0
+}
+.Navbar_Item a{
+    color: var(--Color);
+    @apply flex flex-col justify-center items-center
+}
+.Navbar_Left{
+@apply flex justify-end items-center
+}
+.Navbar_Search{
+@apply flex flex-row-reverse mx-12 justify-center items-center  border py-2 px-4 rounded-lg w-[50px] ;
+transition: all 0.5s ease-in-out;
+overflow: hidden
+}
+.Navbar_Icon{
+@apply text-[20px] font-bold mx-2;
+color: var(--HColor);
+}
+.Navbar_Input{
+    direction: rtl;
+    color: var(--HColor);
+    transition: all 0.5s ease-in-out;
+    outline: #fff;
+@apply bg-transparent font-bold relative left-[-100px] w-0
+}
+.Navbar_Search:hover{
+    @apply w-1/2
+}
+.Navbar_Search:hover .Navbar_Input{
+    @apply w-full left-0
+}
+.Navbar_Input:focus{
+    @apply w-full left-0
+}
+.Navbar_Btn{
+@apply w-1/3 bg-[#810D07] px-4 py-3 rounded-md;
+color: var(--HColor);
+}
+.active{
+    color: #fff !important;
+    @apply font-bold relative pb-1
+}
+.active::after{
+    content: "";
+    @apply absolute w-1 h-1 bg-white bottom-[-10px] rounded-full
+}
+.Extended_Search{
+    @apply w-1/2
+}
